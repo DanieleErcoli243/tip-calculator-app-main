@@ -122,6 +122,20 @@ button {
     font-weight: 700;
 }
 
+
+
+
+/* outcome-box */
+
+.outcome-box {
+    background-color: var(--btn-bkg);
+    border-radius: 20px;
+    margin-bottom: 40px;
+    padding: 20px 10px 10px 10px;
+}
+
 .reset-btn {
     width: 100%;
 }
+
+
