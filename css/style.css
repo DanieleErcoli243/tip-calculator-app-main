@@ -70,21 +70,29 @@ ul {
     align-content: center;
     margin-top: 10px;
     margin-bottom: 20px;
+    margin: -10px 0;
 }
 
 li {
     flex-basis: 50%;
     text-align: center;
+    padding: 10px 0;
 }
 
 /* buttons */
 
 button {
     border: none;
-    border-radius: 10px;
+    border-radius: 5px;
     background-color: var(--btn-bkg);
-    padding: 10px 40px;
+    padding: 10px 30px;
+    width: 50%;
+    text-align: center;
     font-weight: 500;
     color: var(--card-bkg);
     font-size: 22px;
+}
+
+.reset-btn {
+    width: 100%;
 }
