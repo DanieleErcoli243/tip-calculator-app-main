@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css' integrity='sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==' crossorigin='anonymous'/>
+    
     <title>Frontend Mentor | Tip calculator app</title>
     
     <link rel="stylesheet" href="css/style.css">
@@ -18,20 +18,27 @@
         <div class="tip-selector">
           <form action="">
             <label for="bill">Bill</label> 
-            <span><i class="fa-solid fa-dollar-sign"></i></span><input id="bill" type="number" value="0">
+            <figure>
+              <img src="images/icon-dollar.svg" alt="icon of the dollar sign">
+              <input id="bill" type="number" min="1" value="0">
+
+            </figure>
             <label for="tip">Select Tip %</label> 
             <button>5%</button>
             <button>10%</button>
             <button>15%</button>
             <button>25%</button>
             <button>50%</button>
-            <button>Custom</button>
+            <input type="number" placeholder="Custom">
             <label for="people">Number of People</label>
-            <span><i class="fa-solid fa-user"></i></span><input type="number" value="0">
+            <figure>
+              <img src="images/icon-person.svg" alt="icon of a person">
+              <input type="number" min="1" value="0">
+            </figure>
           </form>
         </div>
         <div class="outcome-box">
-          
+
         </div>
       </div>
     </main>
