@@ -17,6 +17,12 @@
     font-family: 'Space Mono', sans serif;
 }
 
+/* generici */
+
 body{
-    background-color: var(--background-color);
+    background-color: var(--bkg-color);
+}
+
+h1 {
+    text-align: center;
 }
