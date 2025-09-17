@@ -1,6 +1,20 @@
 :root {
     --active: hsl(172, 67%, 45%);
-    --background-color: hsl(185, 41%, 84%);
+    --bkg-color: hsl(185, 41%, 84%);
+    --btn-bkg: hsl(183, 100%, 15%);
+    --card-bkg: hsl(0, 100%, 100%);
+    --error: rgb(255, 0, 0);
+    --input-bkg: hsl(189, 47%, 97%);
+}
+
+
+/* css reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Mono', sans serif;
 }
 
 body{
