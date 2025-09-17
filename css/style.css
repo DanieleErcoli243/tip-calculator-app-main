@@ -92,6 +92,26 @@ output {
     margin-bottom: 20px;
 }
 
+
+/* utili */
+
+.active {
+    background-color: hsl(183, 89%, 33%);
+}
+
+.error-label {
+    color: red;
+}
+
+.error-active {
+    border: 1px solid red;
+}
+
+.d-none {
+    display: none;
+}
+
+
 /* card */
 
 .card {
@@ -162,6 +182,7 @@ button {
     width: 100%;
     background-color: hsl(183, 98%, 19%);
     color: var(--title-color);
+    
 }
 
 .reset-btn:hover {
