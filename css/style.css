@@ -7,6 +7,8 @@
     --input-bkg: hsl(189, 47%, 97%);
     --padding: 20px;
     --title-margin: 30px;
+    --title-color: hsl(186, 14%, 43%);
+    --label-color: hsl(184, 14%, 56%);
 }
 
 
@@ -33,22 +35,37 @@ header {
 h1 {
     text-align: center;
     margin: var(--title-margin) 0 var(--title-margin) 0;
-    color: var(--btn-bkg);
+    color: var(--title-color);
     font-size: 24px;
 }
 
 figure {
     margin-bottom: 20px;
+    position: relative;
+}
+
+img {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+
 }
 
 label {
     margin-bottom: 10px;
+    color: var(--title-color);
+    font-weight: 700;
 }
 
 input {
     width: 100%;
     text-align: right;
     background-color: var(--input-bkg);
+    border: none;
+    padding: 10px 0;
+    font-size: 22px;
+    color: var(--btn-bkg);
 }
 
 /* card */
@@ -68,15 +85,14 @@ ul {
     display: flex;
     flex-wrap: wrap;
     align-content: center;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    margin: -10px 0;
+    
+    margin: 10px -10px;
 }
 
 li {
     flex-basis: 50%;
-    text-align: center;
-    padding: 10px 0;
+    margin-bottom: 10px;
+    padding: 0 10px;
 }
 
 /* buttons */
@@ -85,12 +101,25 @@ button {
     border: none;
     border-radius: 5px;
     background-color: var(--btn-bkg);
-    padding: 10px 30px;
-    width: 50%;
+    display: block;
+    width: 100%;
     text-align: center;
-    font-weight: 500;
+    font-weight: 700;
     color: var(--card-bkg);
     font-size: 22px;
+    padding: 10px 40px;
+}
+
+.custom-btn {
+    width: 100%;
+    text-align: center;
+    border: none;
+    background-color: var(--input-bkg);
+    font-size: 22px;
+    padding: 10px 0 10px 30px;
+    display: block;
+    color: var(--title-color);
+    font-weight: 700;
 }
 
 .reset-btn {
